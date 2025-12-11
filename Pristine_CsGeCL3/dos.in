@@ -1,0 +1,9 @@
+&DOS
+ prefix = 'CsGeCl3_super',
+ outdir = './tmp2/',
+ fildos = 'CsGeCl3.dos',
+ Emin = -10.0,
+ Emax = 10.0,
+ DeltaE = 0.01
+/
+
