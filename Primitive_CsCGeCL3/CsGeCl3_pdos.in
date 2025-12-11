@@ -1,0 +1,10 @@
+&PROJWFC
+  prefix     = 'CsGeCl3',
+  outdir     = './tmp1/',
+  ngauss     = 0,
+  degauss    = 0.01,
+  DeltaE     = 0.02,
+  Emin       = -9.0,
+  Emax       = 16.0,
+  filpdos    = 'CsGeCl3_pdos.dat'
+/

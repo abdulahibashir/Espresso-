@@ -1,0 +1,42 @@
+&control
+  calculation = 'scf',
+  prefix = 'CsGeCl3',
+  outdir = './tmp1',
+  pseudo_dir = '/home/bashir/all-pseudos/pseudos/',
+  verbosity = 'default',
+/
+
+&system
+  ibrav = 0
+  nat = 5
+  ntyp = 3
+  ecutwfc = 60         ! adjust to your convergence test
+  ecutrho = 480        ! typically 8× ecutwfc for norm-conserving
+  occupations = 'fixed'
+/
+
+&electrons
+  conv_thr = 1.0d-8
+  mixing_beta = 0.3
+/
+
+
+ATOMIC_SPECIES
+ Cs  132.90545  Cs_pbe_v1.uspp.F.UPF
+ Ge   72.63000  Ge_pbe_v1.4.uspp.F.UPF
+ Cl   35.45300  cl_pbe_v1.4.uspp.F.UPF
+
+CELL_PARAMETERS angstrom
+  5.33895234248  0.00000000000  0.00000000000
+  0.00000000000  5.33895234248  0.00000000000
+  0.00000000000  0.00000000000  5.33895234248
+
+ATOMIC_POSITIONS crystal
+Cs   0.000000000   0.000000000   0.000000000
+Ge   0.500000000   0.500000000   0.500000000
+Cl   0.500000000   0.500000000   0.000000000
+Cl   0.500000000   0.000000000   0.500000000
+Cl   0.000000000   0.500000000   0.500000000
+
+K_POINTS automatic
+ 8 8 8 0 0 0   ! same as in vc-relax

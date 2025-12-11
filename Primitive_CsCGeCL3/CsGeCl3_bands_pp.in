@@ -1,0 +1,5 @@
+&BANDS
+  prefix  = 'CsGeCl3',
+  outdir  = './tmp1/',
+  filband = 'CsGeCl3.bands.dat'
+/
