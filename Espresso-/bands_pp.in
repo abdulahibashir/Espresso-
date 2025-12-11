@@ -1,0 +1,6 @@
+&BANDS
+ prefix = 'CsGeCl3_super',
+ outdir = './tmp2/',
+ filband = 'CsGeCl3.bands'
+/
+

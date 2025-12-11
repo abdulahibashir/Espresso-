@@ -1,0 +1,10 @@
+&PROJWFC
+ prefix = 'CsGeCl3_super',
+ outdir = './tmp2/',
+ Emin = -10.0,
+ Emax = 10.0,
+ DeltaE = 0.01,
+ ngauss = 1,
+ degauss = 0.01
+/
+
